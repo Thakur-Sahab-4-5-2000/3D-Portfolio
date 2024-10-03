@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
 import { styles } from "../style";
 import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants/index";
@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to="/"
+          to="navbar"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
